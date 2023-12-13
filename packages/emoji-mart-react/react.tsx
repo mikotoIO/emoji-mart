@@ -1,8 +1,7 @@
-// @ts-nocheck
 import React, { useEffect, useRef } from 'react'
 import { Picker } from 'emoji-mart'
 
-export default function EmojiPicker(props) {
+export default function EmojiPicker(props: {}) {
   const ref = useRef(null)
   const instance = useRef(null)
 
@@ -19,4 +18,9 @@ export default function EmojiPicker(props) {
   }, [])
 
   return React.createElement('div', { ref })
+}
+
+export function Emoji() {
+  // @ts-ignore
+  return <em-emoji />
 }

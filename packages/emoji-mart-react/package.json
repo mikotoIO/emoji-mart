@@ -15,7 +15,12 @@
   "module": "dist/module.js",
   "scripts": {
     "build": "parcel build --no-autoinstall",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "prepare": "install-peers"
+  },
+  "devDependencies": {
+    "emoji-mart": "*",
+    "react": "18.2.0"
   },
   "peerDependencies": {
     "emoji-mart": "^5.2",
